@@ -1,9 +1,18 @@
 import "./App.css";
+import Link from "./components/Link/Link";
+import Navbar from "./components/Navbar/Navbar";
+import DaisyNav from "./components/DaisyNav/DaisyNav";
+import PriceOptions from "./components/PriceOptions/PriceOptions";
+import ReaChartLineChat from "./components/RecChartLineChart/RecChartLineChart";
 
 function App() {
   return (
     <>
-      <h1 className="text-7xl">Vite + React</h1>
+      <Navbar></Navbar>
+      {/* <DaisyNav></DaisyNav> */}
+      {/* <h1 className="text-7xl">Vite + React</h1> */}
+      <PriceOptions></PriceOptions>
+      <ReaChartLineChat></ReaChartLineChat>
     </>
   );
 }
