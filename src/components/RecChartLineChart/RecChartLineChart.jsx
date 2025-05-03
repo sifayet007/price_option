@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Bar,
-  BarChart,
-  Rectangle,
-  ResponsiveContainer,
-  XAxis,
-  YAxis,
-} from "recharts";
+import { Bar, BarChart, XAxis, YAxis } from "recharts";
 
 const ReaChartLineChat = () => {
   const data = [
@@ -24,13 +17,10 @@ const ReaChartLineChat = () => {
 
   return (
     <div>
+      <p className="text-[#82ca9d]"></p>
       <BarChart width={800} height={400} data={data}>
-        <Bar
-          dataKey="math"
-          fill="#8884d8"
-          activeBar={<Rectangle fill="red" stroke="blue"></Rectangle>}
-        ></Bar>
-        <Bar dataKey="physics" fill="yellow"></Bar>
+        <Bar dataKey="math" fill="#8884d8"></Bar>
+        <Bar className="" dataKey="physics" fill="yellow"></Bar>
         <XAxis dataKey="name"></XAxis>
         <YAxis></YAxis>
       </BarChart>
