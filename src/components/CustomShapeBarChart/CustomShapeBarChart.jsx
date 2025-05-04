@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Bar,
   BarChart,
@@ -56,6 +55,7 @@ const CustomShapeBarChart = () => {
       amt: 2100,
     },
   ];
+
   return (
     <div>
       <ResponsiveContainer width={1280} height={700}>
